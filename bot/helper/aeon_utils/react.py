@@ -9,7 +9,7 @@ async def react(message):
     full_emoji_set = {'👌', '🔥', '🥰', '❤️', '❤️‍🔥', '💯', '⚡', '💋', '😘', '🤩', '😍'}
     
     if available_reactions:
-        if getattr(available_reactions, "all_are_enabled", False):
+        if getattr(available_reactions, "all_are_enabled", True):
             emojis = full_emoji_set
         else:
             emojis = {reaction.emoji for reaction in available_reactions.reactions}
