@@ -20,7 +20,6 @@ from bot.helper.telegram_helper.button_build import ButtonMaker
 from bot.helper.ext_utils.db_handler import DbManager
 from bot.helper.ext_utils.help_strings import uset_display_dict
 from bot.helper.ext_utils.bot_utils import update_user_ldata, get_readable_file_size, sync_to_async, new_thread, is_gdrive_link
-import asyncio
 
 handler_dict = {}
 fname_dict = {
@@ -38,9 +37,6 @@ fname_dict = {
 }
 
 async def get_user_settings(from_user, key=None, edit_type=None, edit_mode=None):
-   sticker_message = await message.reply_sticker("CAACAgIAAxkBAAEXzJtlezBU92o9SmsFleHxnuyQWpkHnQACogEAAjDUnRH1ZwABIuJAFVczBA")
-    await asyncio.sleep(2)
-    await sticker_message.delete()
     user_id = from_user.id
     name = from_user.mention(style="html")
     buttons = ButtonMaker()
