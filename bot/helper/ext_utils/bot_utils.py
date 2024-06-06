@@ -77,18 +77,18 @@ PAGE_NO = 1
 STATUS_LIMIT = 4
 
 class MirrorStatus:
-    STATUS_UPLOADING = "Uploading"
-    STATUS_DOWNLOADING = "Downloading"
-    STATUS_CLONING = "Cloning"
+    STATUS_UPLOADING = "📤 Uᴘʟᴏᴀᴅɪɴɢ"
+    STATUS_DOWNLOADING = "📥 Dᴏᴡɴʟᴏᴀᴅɪɴɢ"
+    STATUS_CLONING = "♻️ Cʟᴏɴɪɴɢ"
     STATUS_QUEUEDL = "DL queued"
     STATUS_QUEUEUP = "UL queued"
-    STATUS_PAUSED = "Paused"
+    STATUS_PAUSED = "⏸️ Pᴀᴜsᴇᴅ"
     STATUS_ARCHIVING = "Archiving"
-    STATUS_EXTRACTING = "Extracting"
-    STATUS_SPLITTING = "Splitting"
+    STATUS_EXTRACTING = "♻️ Exᴛʀᴀᴄᴛɪɴɢ"
+    STATUS_SPLITTING = "✂️Sᴘʟɪᴛᴛɪɴɢ"
     STATUS_CHECKING = "CheckUp"
-    STATUS_SEEDING = "Seeding"
-    STATUS_PROCESSING = "Processing"
+    STATUS_SEEDING = "🌱Sᴇᴇᴅɪɴɢ"
+    STATUS_PROCESSING = "🤫 Pʀᴏᴄᴇssɪɴɢ"
 
 
 class setInterval:
