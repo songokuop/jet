@@ -9,7 +9,7 @@ from time import time
 from functools import partial
 from html import escape
 from io import BytesIO
-from asyncio import sleep
+import asyncio
 
 from bot import OWNER_ID, bot, user_data, config_dict, DATABASE_URL, IS_PREMIUM_USER, MAX_SPLIT_SIZE
 from bot.helper.telegram_helper.message_utils import sendMessage, sendCustomMsg, editMessage, deleteMessage, sendFile, chat_info, user_info, five_minute_del
@@ -37,6 +37,9 @@ fname_dict = {
 }
 
 async def get_user_settings(from_user, key=None, edit_type=None, edit_mode=None):
+   sticker_message = await message.reply_sticker("CAACAgIAAxkBAAEXzJtlezBU92o9SmsFleHxnuyQWpkHnQACogEAAjDUnRH1ZwABIuJAFVczBA")
+    await asyncio.sleep(2)
+    await sticker_message.delete()
     user_id = from_user.id
     name = from_user.mention(style="html")
     buttons = ButtonMaker()
