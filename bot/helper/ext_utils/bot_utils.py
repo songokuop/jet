@@ -199,7 +199,7 @@ def source(self):
 
 
 def get_readable_message():
-    msg = "<b><a href='https://t.me/Movies_Zone_Media'>Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴏᴠɪᴇs Zᴏɴᴇ Mᴇᴅɪᴀ 🚀♥️</a></b>\n\n"
+    msg = "<b>Pᴏᴡᴇʀᴇᴅ Bʏ : <a href='https://t.me/Movies_Zone_Media'>Mᴏᴠɪᴇs Zᴏɴᴇ Mᴇᴅɪᴀ 🚀♥️</a></b>\n<b>Oᴡɴᴇᴅ Bʏ : <a href='https://t.me/Mr_Haryanvi_Jaat'>Mʀ Hᴀʀʏᴀɴᴠɪ 🇮🇳</a></b>\n\n"
     button = None
     tasks = len(download_dict)
     currentTime = get_readable_time(time() - botStartTime)
