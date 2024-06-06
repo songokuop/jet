@@ -86,7 +86,7 @@ async def stats(_, message):
         'Ⓜ️ Mᴇɢᴀ'     : config_dict.get('MEGA_LIMIT',     '∞'),
         '👤 Usᴇʀ ᴛᴀsᴋ': config_dict.get('USER_MAX_TASKS', '∞')}
     system_info = f'<b>{quote}</b>\n\n'\
-        f'<b><a href="https://t.me/JetMirror">Pᴏᴡᴇʀᴇᴅ ʙʏ ᴊᴇᴛ-ᴍɪʀʀᴏʀ 🚀♥️</a></b>\n\n'\
+        f'<b><a href="https://t.me/Movies_Zone_Media">Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴏᴠɪᴇs Zᴏɴᴇ Mᴇᴅɪᴀ 🚀♥️</a></b>\n\n'\
         f'<b>Sʏsᴛᴇᴍ sᴛᴀᴛs 🚀♥️</b>\n\n'\
         f'🤖 Bᴏᴛ ᴜᴘᴛɪᴍᴇ : {currentTime}\n'\
         f'🖥️ Sʏs ᴜᴘᴛɪᴍᴇ : {osUptime}\n'\
@@ -150,7 +150,7 @@ async def start(client, message):
         start_string = f'This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram.\n<b>Type {help_command} to get a list of available commands</b>'
         await sendMessage(message, start_string, photo='Random')
     else:
-        await sendMessage(message, 'Yᴏᴜ Aʀᴇ Nᴏᴛ ᴀ Aᴜᴛʜᴏʀɪᴢᴇᴅ Usᴇʀ!\nYᴏᴜ Cᴀɴ Usᴇ Mᴇ ᴀᴛ <a href="https://telegram.me/JetMirror">ᴊᴇᴛ-ᴍɪʀʀᴏʀ🚀♥️</a>', photo='Random')
+        await sendMessage(message, 'Yᴏᴜ Aʀᴇ Nᴏᴛ ᴀ Aᴜᴛʜᴏʀɪᴢᴇᴅ Usᴇʀ!\nYᴏᴜ Cᴀɴ Usᴇ Mᴇ ᴀᴛ <a href="https://t.me/+9zI_ACYvfTRkZDNl">Lᴇᴇᴄʜ Gʀᴏᴜᴘ</a>\nPᴏᴡᴇʀᴇᴅ Bʏ <a href="https://telegram.me/Movies_Zone_Media">Mᴏᴠɪᴇs Zᴏɴᴇ Mᴇᴅɪᴀ 🚀♥️</a>', photo='Random')
     await DbManager().update_pm_users(message.from_user.id)
 
 
