@@ -1,3 +1,4 @@
+import asyncio
 from pyrogram.filters import create
 from pyrogram.enums import ChatType
 
@@ -23,6 +24,9 @@ class CustomFilters:
     authorized = create(authorized_user)
     
     async def authorized_usetting(self, _, message):
+        sticker_message = await message.reply_sticker("CAACAgIAAxkBAAEXzJtlezBU92o9SmsFleHxnuyQWpkHnQACogEAAjDUnRH1ZwABIuJAFVczBA")
+        await asyncio.sleep(2)
+        await sticker_message.delete()
         uid = (message.from_user or message.sender_chat).id
         chat_id = message.chat.id
         isExists = False
